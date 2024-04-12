@@ -1,5 +1,6 @@
 import Navbar from "../components/Navbar"
 import { Open_Sans  } from "next/font/google"
+import './global.css'
 
 export const metadata = {
   title: 'First App on Next.js',
