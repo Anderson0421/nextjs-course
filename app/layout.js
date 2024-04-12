@@ -1,4 +1,5 @@
 import Navbar from "../components/Navbar"
+import { Open_Sans  } from "next/font/google"
 
 export const metadata = {
   title: 'First App on Next.js',
@@ -11,10 +12,15 @@ export const metadata = {
   },
 }
 
+const openSans  = Open_Sans ({
+  weight: ["400", "700"],
+  subsets: ["latin"],
+})
+
 export default function RootLayout({ children }) {
   return (
     <html lang="en">
-      <body>
+      <body className={openSans .className}>
         <Navbar />
         {children}
       </body>
