@@ -1,5 +1,5 @@
-import Navbar from "../components/Navbar"
-import { Open_Sans  } from "next/font/google"
+import Navbar from "@/src/components/Navbar"
+import { Open_Sans } from "next/font/google"
 import './global.css'
 
 export const metadata = {
@@ -13,7 +13,7 @@ export const metadata = {
   },
 }
 
-const openSans  = Open_Sans ({
+const openSans = Open_Sans({
   weight: ["400", "700"],
   subsets: ["latin"],
 })
@@ -21,7 +21,7 @@ const openSans  = Open_Sans ({
 export default function RootLayout({ children }) {
   return (
     <html lang="en">
-      <body className={openSans .className}>
+      <body className={openSans.className}>
         <Navbar />
         {children}
       </body>

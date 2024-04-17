@@ -1,5 +1,5 @@
 
-import Users from "@/components/Users"
+import Users from "@/src/components/Users"
 
 export const metadata = {
     title: "Home Page",
